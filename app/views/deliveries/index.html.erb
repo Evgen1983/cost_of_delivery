@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Deliveries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>Where</th>
+      <th>Length</th>
+      <th>Width</th>
+      <th>Height</th>
+      <th>Common volume</th>
+      <th>Common weight</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deliveries.each do |delivery| %>
+      <tr>
+        <td><%= delivery.from %></td>
+        <td><%= delivery.where %></td>
+        <td><%= delivery.length %></td>
+        <td><%= delivery.width %></td>
+        <td><%= delivery.height %></td>
+        <td><%= delivery.common_volume %></td>
+        <td><%= delivery.common_weight %></td>
+        <td><%= link_to 'Show', delivery %></td>
+        <td><%= link_to 'Edit', edit_delivery_path(delivery) %></td>
+        <td><%= link_to 'Destroy', delivery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Delivery', new_delivery_path %>

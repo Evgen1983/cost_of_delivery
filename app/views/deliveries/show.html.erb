@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From:</strong>
+  <%= @delivery.from %>
+</p>
+
+<p>
+  <strong>Where:</strong>
+  <%= @delivery.where %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @delivery.length %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @delivery.width %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @delivery.height %>
+</p>
+
+<p>
+  <strong>Common volume:</strong>
+  <%= @delivery.common_volume %>
+</p>
+
+<p>
+  <strong>Common weight:</strong>
+  <%= @delivery.common_weight %>
+</p>
+
+<%= link_to 'Edit', edit_delivery_path(@delivery) %> |
+<%= link_to 'Back', deliveries_path %>
