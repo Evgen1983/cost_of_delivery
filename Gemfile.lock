@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/DavyJonesLocker/client_side_validations.git
+  revision: 396bc90f10c5e787416254f4548de06ced1d9578
+  specs:
+    client_side_validations (4.2.0)
+      jquery-rails (>= 3.1.2, < 5.0.0)
+      rails (>= 4.0.0, < 4.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -213,6 +221,7 @@ DEPENDENCIES
   bcrypt (= 3.1.7)
   bootstrap-sass (~> 3.3.6)
   byebug (= 3.4.0)
+  client_side_validations!
   coffee-rails (= 4.1.0)
   guard-minitest (= 2.3.1)
   jbuilder (= 2.2.3)
