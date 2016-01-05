@@ -14,4 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require rails.validations
+//= require jquery-ui
+//= require jquery.kladr.min
+//= require jquery-1.11.1.min
+//= require kladr
+//= require core
 //= require_tree .

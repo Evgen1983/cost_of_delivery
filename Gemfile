@@ -17,6 +17,7 @@ gem 'rack-rewrite', '~> 1.5.0'
 gem 'client_side_validations', github: 'DavyJonesLocker/client_side_validations'
 
 
+
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
