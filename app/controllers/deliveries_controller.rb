@@ -1,6 +1,5 @@
 class DeliveriesController < ApplicationController
   before_action :set_delivery, only: [:show, :edit, :update, :destroy]
-  
 
   # GET /deliveries
   # GET /deliveries.json
@@ -11,6 +10,7 @@ class DeliveriesController < ApplicationController
   # GET /deliveries/1
   # GET /deliveries/1.json
   def show
+    
   end
 
   # GET /deliveries/new
@@ -20,17 +20,21 @@ class DeliveriesController < ApplicationController
 
   # GET /deliveries/1/edit
   def edit
+   
   end
-
+  
   # POST /deliveries
   # POST /deliveries.json
   def create
     @delivery = Delivery.new(delivery_params)
-
+    @delivery.distance = 1000 
+    @price = 500 + (@delivery.distance * (@delivery.length + @delivery.width + @delivery.height + @delivery.common_weight))
+    @delivery.calculation = @price  
     respond_to do |format|
       if @delivery.save
+                
         format.html { redirect_to @delivery, notice: 'Delivery was successfully created.' }
-        format.json { render :show, status: :created, location: @delivery }
+        format.json { render :show, status: :updated, location: @delivery }
       else
         format.html { render :new }
         format.json { render json: @delivery.errors, status: :unprocessable_entity }
@@ -70,6 +74,7 @@ class DeliveriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def delivery_params
-      params.require(:delivery).permit(:from, :where, :length, :width, :height, :common_volume, :common_weight)
+      params.require(:delivery).permit(:from, :where, :length, :width, :height, :common_volume, :common_weight, :distance, :calculation)
     end
+  
 end

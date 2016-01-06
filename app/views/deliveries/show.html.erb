@@ -35,5 +35,15 @@
   <%= @delivery.common_weight %>
 </p>
 
+<p>
+  <strong>Distance:</strong>
+  <%= @delivery.distance %>
+</p>
+
+<p>
+  <strong>Calculation:</strong>
+  <%= @delivery.calculation %>
+</p>
+
 <%= link_to 'Edit', edit_delivery_path(@delivery) %> |
 <%= link_to 'Back', deliveries_path %>
