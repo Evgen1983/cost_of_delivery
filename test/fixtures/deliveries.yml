@@ -8,6 +8,8 @@ one:
   height: 9.99
   common_volume: 9.99
   common_weight: 9.99
+  distance: 9.99
+  calculation: 9.99
 
 two:
   from: MyString
@@ -17,3 +19,5 @@ two:
   height: 9.99
   common_volume: 9.99
   common_weight: 9.99
+  distance: 9.99
+  calculation: 9.99

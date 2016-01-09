@@ -18,7 +18,7 @@ class DeliveriesControllerTest < ActionController::TestCase
 
   test "should create delivery" do
     assert_difference('Delivery.count') do
-      post :create, delivery: { common_volume: @delivery.common_volume, common_weight: @delivery.common_weight, from: @delivery.from, height: @delivery.height, length: @delivery.length, where: @delivery.where, width: @delivery.width }
+    post :create, delivery: { common_volume: @delivery.common_volume, common_weight: @delivery.common_weight, from: @delivery.from, height: @delivery.height, length: @delivery.length, where: @delivery.where, width: @delivery.width, distance: @delivery.distance, calculation: @delivery.calculation}
     end
 
     assert_redirected_to delivery_path(assigns(:delivery))
@@ -35,7 +35,7 @@ class DeliveriesControllerTest < ActionController::TestCase
   end
 
   test "should update delivery" do
-    patch :update, id: @delivery, delivery: { common_volume: @delivery.common_volume, common_weight: @delivery.common_weight, from: @delivery.from, height: @delivery.height, length: @delivery.length, where: @delivery.where, width: @delivery.width }
+    patch :update, id: @delivery, delivery: { common_volume: @delivery.common_volume, common_weight: @delivery.common_weight, from: @delivery.from, height: @delivery.height, length: @delivery.length, where: @delivery.where, width: @delivery.width, distance: @delivery.distance, calculation: @delivery.calculation }
     assert_redirected_to delivery_path(assigns(:delivery))
   end
 
