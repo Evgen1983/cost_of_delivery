@@ -9,6 +9,7 @@ gem 'coffee-rails', '4.1.0'
 gem 'jquery-rails', '4.0.3'
 gem 'jquery-ui-rails'
 gem 'turbolinks',   '2.3.0'
+gem 'jquery-turbolinks'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 gem 'russian', '~> 0.6.0'

@@ -11,12 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
-//= require rails.validations
 //= require jquery-ui
-//= require jquery.kladr.min
-//= require jquery-1.11.1.min
+//= require rails.validations
 //= require kladr
 //= require core
+//= require turbolinks
 //= require_tree .

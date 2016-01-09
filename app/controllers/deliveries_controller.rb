@@ -1,5 +1,6 @@
 class DeliveriesController < ApplicationController
   before_action :set_delivery, only: [:show, :edit, :update, :destroy]
+ 
 
   # GET /deliveries
   # GET /deliveries.json
@@ -23,17 +24,16 @@ class DeliveriesController < ApplicationController
    
   end
   
+  
   # POST /deliveries
   # POST /deliveries.json
   def create
     @delivery = Delivery.new(delivery_params)
-    @delivery.distance = 1000 
-    @price = 500 + (@delivery.distance * (@delivery.length + @delivery.width + @delivery.height + @delivery.common_weight))
-    @delivery.calculation = @price  
+    
     respond_to do |format|
       if @delivery.save
                 
-        format.html { redirect_to @delivery, notice: 'Delivery was successfully created.' }
+        format.html {redirect_to @delivery, notice: 'Delivery was successfully created.'}
         format.json { render :show, status: :updated, location: @delivery }
       else
         format.html { render :new }
