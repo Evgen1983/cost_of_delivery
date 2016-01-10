@@ -1,49 +1,49 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>From:</strong>
+  <strong>Откуда:</strong>
   <%= @delivery.from %>
 </p>
 
 <p>
-  <strong>Where:</strong>
+  <strong>Куда:</strong>
   <%= @delivery.where %>
 </p>
 
 <p>
-  <strong>Length:</strong>
+  <strong>Длина:</strong>
   <%= @delivery.length %>
 </p>
 
 <p>
-  <strong>Width:</strong>
+  <strong>Ширина:</strong>
   <%= @delivery.width %>
 </p>
 
 <p>
-  <strong>Height:</strong>
+  <strong>Высота:</strong>
   <%= @delivery.height %>
 </p>
 
 <p>
-  <strong>Common volume:</strong>
+  <strong>Общий вес:</strong>
   <%= @delivery.common_volume %>
 </p>
 
 <p>
-  <strong>Common weight:</strong>
+  <strong>Общий объем:</strong>
   <%= @delivery.common_weight %>
 </p>
 
 <p>
-  <strong>Distance:</strong>
+  <strong>Расстояние:</strong>
   <%= @delivery.distance %>
 </p>
 
 <p>
-  <strong>Calculation:</strong>
+  <strong>Стоимость:</strong>
   <%= @delivery.calculation %>
 </p>
 
-<%= link_to 'Edit', edit_delivery_path(@delivery) %> |
-<%= link_to 'Back', deliveries_path %>
+<%= link_to 'Редактировать', edit_delivery_path(@delivery) %> |
+<%= link_to 'Список', deliveries_path %>

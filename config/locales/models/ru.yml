@@ -1,0 +1,15 @@
+ru:
+  activerecord:
+    models:
+      delivery: Доставка
+    attributes:
+      delivery:
+        from: Откуда
+        where: Куда
+        length: Длина
+        width: Ширина
+        height: Высота
+        common_weight: Общий вес
+        common_volume: Общий объем
+        distance: Расстояние
+        calculation: Рассчет  

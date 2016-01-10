@@ -4,7 +4,7 @@ $ ->
     $var2 = $('[name="delivery[where]"]').val()
     #event.preventDefault();
     $.ajax
-      url: '//calc-api.ru/app:geo-api/null?a=' + encodeURIComponent($var1) + '&b=' + encodeURIComponent($var2)
+      url: 'http://calc-api.ru/app:geo-api/null?a=' + encodeURIComponent($var1) + '&b=' + encodeURIComponent($var2)
       dataType: 'json'
       async: false
       success: (result) ->

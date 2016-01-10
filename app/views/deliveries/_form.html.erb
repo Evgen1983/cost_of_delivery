@@ -1,7 +1,7 @@
 <%= form_for(@delivery, validate: true) do |f| %>
   <% if @delivery.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@delivery.errors.count, "error") %> prohibited this delivery from being saved:</h2>
+      <h2>Форма содержит <%= Russian::pluralize(@delivery.errors.count, "ошибку", "ошибки", "ошибок") %></h2>
 
       <ul>
       <% @delivery.errors.full_messages.each do |message| %>
@@ -43,6 +43,6 @@
     <%= f.hidden_field :distance %>&nbsp;
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Произвести расчет" %>
   </div>
 <% end %>
